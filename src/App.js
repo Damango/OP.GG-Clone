@@ -1,6 +1,7 @@
 
 import './App.css';
 import AnimatedMatchCard from "./components/Animated-Game-Stats-Card/LeagueMatchCard"
+import GrandMasterIcon from "./media/grandmaster.png"
 
 function App() {
 
@@ -89,7 +90,12 @@ function App() {
 
   return (
     <div className="App">
-      <div className="nav-bar-container">NAV BAR</div>
+      <div className="nav-bar-container">
+        <div className="logo">OP.GG</div>
+        <div className="search-bar-container">
+          <input placeholder="search"/>
+        </div>
+      </div>
       <div className="main-view-wrapper">
         <div className="main-view-container">
           <div className="player-view-header-container">
@@ -110,12 +116,85 @@ function App() {
               <div className="rank-icon"></div>
               <div className="rank-info-container">
                 <div className="rank-category">Ranked Solo</div>
-                <div className="player-rank">Master</div>
+                <div className="player-rank">Grand Master</div>
                 <div className="current-lp-win-ratio">27 LP 36W 26L</div>
                 <div className="win-ratio">Win Ratio 58%</div>
               </div>
             </div>
-            <div className="player-champion-stats"></div>
+            <div className="player-champion-stats">
+              <div className="player-stats-selectors-container">
+                <button className="player-stats-selector">S2021 Total</button>
+                <button className="player-stats-selector">Ranked Solo</button>
+                <button className="player-stats-selector">Ranked Flex 5v5</button>
+              </div>
+              <div className="champion-stats-cards-container">
+                <div className="champion-stats-card">
+                  <div className="champion-stats-champion-icon champion-stats-section"></div>
+                  <div className="champion-stats-champion-name champion-stats-section" style={{textAlign: 'left'}}>
+                   <span>Veigar</span>
+                    <span>CS 195.4 (6.3)</span>
+                  </div>
+                  
+                  <div className="champion-stats-kda champion-stats-section">
+                  <span>3.31 KDA</span>
+                    <span>7.1 / 4.6 / 7.2</span>
+                  </div>
+                  <div className="champion-stats-win-rate champion-stats-section">
+                  <span>72%</span>
+                    <span>18 Played</span>
+                  </div>
+                </div>
+                <div className="champion-stats-card">
+                  <div className="champion-stats-champion-icon champion-stats-section"></div>
+                  <div className="champion-stats-champion-name champion-stats-section" style={{textAlign: 'left'}}>
+                   <span>Veigar</span>
+                    <span>CS 195.4 (6.3)</span>
+                  </div>
+                  
+                  <div className="champion-stats-kda champion-stats-section">
+                  <span>3.31 KDA</span>
+                    <span>7.1 / 4.6 / 7.2</span>
+                  </div>
+                  <div className="champion-stats-win-rate champion-stats-section">
+                  <span>72%</span>
+                    <span>18 Played</span>
+                  </div>
+                </div>
+                <div className="champion-stats-card">
+                  <div className="champion-stats-champion-icon champion-stats-section"></div>
+                  <div className="champion-stats-champion-name champion-stats-section" style={{textAlign: 'left'}}>
+                   <span>Veigar</span>
+                    <span>CS 195.4 (6.3)</span>
+                  </div>
+                  
+                  <div className="champion-stats-kda champion-stats-section">
+                  <span>3.31 KDA</span>
+                    <span>7.1 / 4.6 / 7.2</span>
+                  </div>
+                  <div className="champion-stats-win-rate champion-stats-section">
+                  <span>72%</span>
+                    <span>18 Played</span>
+                  </div>
+                </div>
+                <div className="champion-stats-card">
+                  <div className="champion-stats-champion-icon champion-stats-section"></div>
+                  <div className="champion-stats-champion-name champion-stats-section" style={{textAlign: 'left'}}>
+                   <span>Veigar</span>
+                    <span>CS 195.4 (6.3)</span>
+                  </div>
+                  
+                  <div className="champion-stats-kda champion-stats-section">
+                  <span>3.31 KDA</span>
+                    <span>7.1 / 4.6 / 7.2</span>
+                  </div>
+                  <div className="champion-stats-win-rate champion-stats-section">
+                  <span>72%</span>
+                    <span>18 Played</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
           <div className="player-match-history-wrapper">
             
