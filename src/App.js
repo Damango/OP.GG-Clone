@@ -3,6 +3,7 @@ import './App.css';
 import AnimatedMatchCard from "./components/Animated-Game-Stats-Card/LeagueMatchCard"
 import GrandMasterIcon from "./media/grandmaster.png"
 
+
 function App() {
 
  
@@ -198,16 +199,16 @@ function App() {
           </div>
           <div className="player-match-history-wrapper">
             
-            <div className="match-history-filters">
-              <span>Match History</span>
-              <div className="match-history-buttons">
-                <button>Ranked Solo</button>
-                <button>Champion</button>
-              </div>
-              </div>
+           
             <div className="match-history-container">
               <div className="match-history-header">
-                <div className="matches-win-loss-ratio"></div>
+              <div className="match-history-filters">
+                <span>Match History</span>
+                <div className="match-history-buttons">
+                  <button>Ranked Solo</button>
+                  <button>Champion</button>
+                </div>
+            </div>
               </div>
               <div className="match-cards-container"> 
                 {cardData.map((card) => <AnimatedMatchCard matchData={card}/>)}

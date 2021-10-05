@@ -200,7 +200,14 @@
 }
 
 .match-history-filters {
-	height: 40px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 670px;
+
+	box-sizing: border-box;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .match-history-buttons {
@@ -212,19 +219,7 @@
 }
 .match-history-header {
 	background-color: white;
-	border-bottom: 1px solid black;
-	height: 120px;
-}
-
-.matches-win-loss-ratio {
-	position: relative;
-	background-color: black;
-	width: 75px;
-	height: 75px;
-	border-radius: 50%;
-	top: 50%;
-	transform: translateY(-50%);
-	margin-left: 25px;
+	border-bottom: 1px solid rgb(185, 185, 185);
 }
 
 .match-cards-container {
