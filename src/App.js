@@ -111,7 +111,7 @@ function App() {
           </div>
 
 
-
+    <div className="player-info-grid-container">
           <div className="player-information-container">
             <div className="player-rank-information">
               <div className="rank-icon"></div>
@@ -202,13 +202,13 @@ function App() {
            
             <div className="match-history-container">
               <div className="match-history-header">
-              <div className="match-history-filters">
-                <span>Match History</span>
-                <div className="match-history-buttons">
-                  <button>Ranked Solo</button>
-                  <button>Champion</button>
-                </div>
-            </div>
+                <div className="match-history-filters">
+                  <span>Match History</span>
+                  <div className="match-history-buttons">
+                    <button>Ranked Solo</button>
+                    <button>Champion</button>
+                  </div>
+              </div>
               </div>
               <div className="match-cards-container"> 
                 {cardData.map((card) => <AnimatedMatchCard matchData={card}/>)}
@@ -217,6 +217,8 @@ function App() {
            
           
             
+          </div>
+
           </div>
         
         </div>
